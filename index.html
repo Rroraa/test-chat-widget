@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raymond Oraa</title>
+  <meta name="description" content="Portfolio of Raymond Oraa, QA automation engineer working with Python, pytest and Playwright.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">RO</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Raymond Oraa<br>finds the bugs before your users do.</h1>
+        <p class="lead">QA automation engineer. I build test suites in Python, pytest and Playwright that stay reliable as the product changes.</p>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="report" role="img" aria-label="Sample test run: all checks passed">
+        <div class="report-bar">test run</div>
+        <ul class="checks" id="checks">
+          <li>login with valid credentials</li>
+          <li>reject wrong password</li>
+          <li>agent status changes to Available</li>
+          <li>webhook payload matches contract</li>
+          <li>session survives page reload</li>
+        </ul>
+        <div class="report-foot" id="summary">running…</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li class="project">
+          <img src="images/control-center.png" width="1440" height="900" loading="lazy"
+               alt="QA Control Center dashboard showing total runs, pass rate, failures and a table of test execution history">
+          <div class="project-text">
+            <h3>apnqa and the QA Control Center</h3>
+            <p>A multi-project QA framework on Python, pytest and Playwright. A second project takes a day of configuration instead of a fork. The Control Center indexes every run, so failures are one click from their cause.</p>
+            <span class="tags">Python, pytest, Playwright</span>
+          </div>
+        </li>
+        <li class="project">
+          <img src="images/test-cases.png" width="1180" height="470" loading="lazy"
+               alt="Sample test case with action, test data and expected result steps, all passed, linked to a requirement">
+          <div class="project-text">
+            <h3>Test-case pipeline</h3>
+            <p>Turns a user story into test cases and a traceability matrix, automates them, then syncs the steps into Jira and Xray. The image is a sample of the output.</p>
+            <span class="tags">Jira, Xray, CSV</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about">
+        <p>I write test cases from requirements, automate the ones worth repeating, and keep them honest: no weakened assertions, no deleted flaky tests.</p>
+        <ul class="skills">
+          <li>Python</li>
+          <li>pytest</li>
+          <li>Playwright</li>
+          <li>Jira and Xray</li>
+          <li>API testing</li>
+          <li>Manual test design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Open to new QA roles and projects.</p>
+      <p><a class="mail" href="mailto:you@example.com">you@example.com</a></p>
+      <p class="links"><a href="https://github.com/">GitHub</a> <a href="https://linkedin.com/">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year">2026</span> Raymond Oraa</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
